@@ -1,0 +1,13 @@
+<div class="container">
+<button class="button" phx-click="run"><%= if @running do %>Stop<% else %>Start<% end %></button>
+<button class="button" phx-click="clear">Clear</button>
+</div>
+<div class="container">
+  <%= for {_row, columns} <- @rows do %>
+    <div class="row">
+      <%= for {{x, y}, cell} <- columns do %>
+        <button class="button <%= cell.state %>" phx-click="switch_state" phx-value="<%= x %>,<%= y %>"></button>
+      <% end %>
+    </div>
+  <% end %>
+</div>

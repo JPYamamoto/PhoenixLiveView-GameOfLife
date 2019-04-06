@@ -1,0 +1,26 @@
+/* This file is for your main application css. */
+
+/* @import "./phoenix.css"; */
+
+body {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+}
+
+.button {
+    padding: 10px;
+}
+
+.alive, .alive:hover, .alive:focus {
+    background-color: #3250bc;
+    border: 0.1rem solid #3250bc;
+}
+
+.dead, .dead:hover, .dead:focus {
+    background-color: #cfd1d6;
+    border: 0.1rem solid #cfd1d6;
+}
